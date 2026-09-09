@@ -8,12 +8,17 @@ An advanced techno-economic and bankable modeling platform for utility-scale Bat
 ## Live Application
 Access the live interactive web dashboard: [Berlin 20Y BESS Model](https://berlin-bess-20y-model-7kwugb4hngseemfvzxsf6s.streamlit.app/)
 
+## Visualizations & Optimal Dispatch
+The model optimizes 24-hour revenue streams by leveraging renewable duck-curves and price spreads in the German market.
+
+![BESS Dispatch Animation](bess_dispatch_animated.gif)
+
 ## Key Features
 - **Revenue Stacking**: Combines energy arbitrage and high-tier ancillary capacity markets (FCR/aFRR).
 - **20-Year Horizon Analysis**: Evaluates long-term cash flows, Net Present Value (NPV), Internal Rate of Return (IRR), and break-even points.
 - **Battery Health (SOH) Management**: Includes mid-life cell augmentation modeling at Year 10 to recover degraded capacity.
 - **Automated CI/CD**: Integrated with GitHub Actions for continuous testing and validation via Pytest.
-- **Dynamic Visualizations**: Cyberpunk-themed interactive dashboards and animated dispatch profiles.
+- **Bankable Reports**: Automatically exports financial metrics and 20-year cash flow waterfalls to Excel (`Berlin_BESS_Bankable_Model.xlsx`).
 ## Repository Structure
 ```text
 berlin-bess-20y-model/
