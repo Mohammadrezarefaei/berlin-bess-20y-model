@@ -24,24 +24,25 @@ st.markdown(
 
 st.title("⚡ Berlin 20-Year Utility-Scale BESS Financial & Optimization Model")
 st.markdown(
-    "پلتفرم پیشرفته تحلیل تکنو-اقتصادی و مدل‌سازی بانکی باتری مقیاس بزرگ در"
-    " بازار آلمان با افق ۲۰ ساله."
+    "Advanced techno-economic and bankable modeling platform for utility-scale"
+    " battery energy storage systems in the German market with a 20-year"
+    " horizon."
 )
 
 # Sidebar Inputs for Interactive Control
-st.sidebar.header("پارامترهای کلیدی مدل")
+st.sidebar.header("Model Parameters")
 power_cap = st.sidebar.slider(
-    "حداکثر توان باتری (MW)", min_value=50, max_value=500, value=200, step=10
+    "Max BESS Power (MW)", min_value=50, max_value=500, value=200, step=10
 )
 fcr_rate = st.sidebar.slider(
-    "درآمد سالانه خدمات جانبی (€/MW)",
+    "Annual Ancillary Revenue (€/MW)",
     min_value=40000,
     max_value=70000,
     value=55000,
     step=2500,
 )
 discount_rate = (
-    st.sidebar.slider("نرخ تنزیل پروژه (%)", min_value=4.0, max_value=12.0, value=7.0, step=0.5)
+    st.sidebar.slider("Project Discount Rate (%)", min_value=4.0, max_value=12.0, value=7.0, step=0.5)
     / 100
 )
 
@@ -183,10 +184,10 @@ def load_and_solve_model(p_max, fcr_rev, disc_rate):
 
 # Display Metrics
 col1, col2, col3, col4 = st.columns(4)
-col1.metric("ظرفیت بهینه توان", f"{opt_p:.1f} MW")
-col2.metric("سرمایه‌گذاری اولیه (CAPEX)", f"{capex/1e6:.2f} M€")
-col3.metric("ارزش خالص فعلی (NPV)", f"{npv/1e6:.2f} M€")
-col4.metric("نرخ بازده داخلی (IRR)", f"{irr*100:.2f}%")
+col1.metric("Optimal Power Capacity", f"{opt_p:.1f} MW")
+col2.metric("Initial CAPEX", f"{capex/1e6:.2f} M€")
+col3.metric("Net Present Value (NPV)", f"{npv/1e6:.2f} M€")
+col4.metric("Internal Rate of Return (IRR)", f"{irr*100:.2f}%")
 
 st.markdown("---")
 
@@ -208,7 +209,7 @@ ax1.plot(
     label="Price (€/MWh)",
 )
 ax1.set_title("24-Hour Optimal Dispatch Profile", color="#ffffff")
-ax1.set_xlabel("Hour", color="#e0e0e0")
+ax1.set_xlabel("Hour of Day", color="#e0e0e0")
 ax1.set_ylabel("Price (€/MWh)", color="#ff5555")
 
 ax_t = ax1.twinx()
