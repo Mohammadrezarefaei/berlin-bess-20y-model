@@ -20,7 +20,6 @@ Access the interactive web dashboard here: [Berlin 20Y BESS Model](https://berli
 ```bash
 git clone [https://github.com/Mohammadrezarefaei/berlin-bess-20y-model.git](https://github.com/Mohammadrezarefaei/berlin-bess-20y-model.git)
 cd berlin-bess-20y-model
-## Repository Structure
 ```text
 berlin-bess-20y-model/
 ├── .github/
