@@ -3,17 +3,17 @@
 [![BESS Model CI](https://github.com/Mohammadrezarefaei/berlin-bess-20y-model/actions/workflows/ci.yml/badge.svg)](https://github.com/Mohammadrezarefaei/berlin-bess-20y-model/actions/workflows/ci.yml)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://berlin-bess-20y-model-7kwugb4hngseemfvzxsf6s.streamlit.app/)
 
-An advanced techno-economic and bankable modeling platform for utility-scale Battery Energy Storage Systems (BESS) in Berlin, Germany. The framework incorporates EPEX Spot price proxies driven by renewable and gas generation, KMeans clustering for representative days, PuLP-based linear optimization for revenue stacking (Day-Ahead Arbitrage + FCR/aFRR ancillary services), 20-year degradation tracking, mid-life SOH augmentation, and interactive visualization.
+An advanced techno-economic and bankable modeling platform for utility-scale Battery Energy Storage Systems (BESS) in Berlin, Germany. The framework incorporates EPEX Spot price proxies driven by renewable and gas generation, KMeans clustering for representative days, PuLP-based linear optimization for revenue stacking (Day-Ahead Arbitrage + FCR/aFRR ancillary services), 20-year degradation tracking, mid-life SOH augmentation, and dynamic animated visualizations.
 
-## Live App
-Access the interactive web dashboard here: [Berlin 20Y BESS Model](https://berlin-bess-20y-model-7kwugb4hngseemfvzxsf6s.streamlit.app/)
+## Live Application
+Access the live interactive web dashboard: [Berlin 20Y BESS Model](https://berlin-bess-20y-model-7kwugb4hngseemfvzxsf6s.streamlit.app/)
 
 ## Key Features
 - **Revenue Stacking**: Combines energy arbitrage and high-tier ancillary capacity markets (FCR/aFRR).
 - **20-Year Horizon Analysis**: Evaluates long-term cash flows, Net Present Value (NPV), Internal Rate of Return (IRR), and break-even points.
 - **Battery Health (SOH) Management**: Includes mid-life cell augmentation modeling at Year 10 to recover degraded capacity.
 - **Automated CI/CD**: Integrated with GitHub Actions for continuous testing and validation via Pytest.
-- **Dark Theme Interface**: Sleek, cyberpunk-inspired visual dashboard powered by Streamlit and Matplotlib.
+- **Dynamic Visualizations**: Cyberpunk-themed interactive dashboards and animated dispatch profiles.
 ## Repository Structure
 ```text
 berlin-bess-20y-model/
