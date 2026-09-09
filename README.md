@@ -14,6 +14,7 @@ Access the interactive web dashboard here: [Berlin 20Y BESS Model](https://berli
 - **Battery Health (SOH) Management**: Includes mid-life cell augmentation modeling at Year 10 to recover degraded capacity.
 - **Automated CI/CD**: Integrated with GitHub Actions for continuous testing and validation via Pytest.
 - **Dark Theme Interface**: Sleek, cyberpunk-inspired visual dashboard powered by Streamlit and Matplotlib.
+## Repository Structure
 ```text
 berlin-bess-20y-model/
 ├── .github/
