@@ -22,15 +22,15 @@ Access the interactive web dashboard here: [Berlin 20Y BESS Model](https://berli
    cd berlin-bess-20y-model
 Install dependencies:
 
-'''bash
+
 pip install -r requirements.txt
 Run unit tests:
 
-'''bash
+
 pytest
 Launch the Streamlit application:
 
-'''bash
+
 streamlit run app.py
 
 ## Repository Structure
